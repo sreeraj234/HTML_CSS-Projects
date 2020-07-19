@@ -1,0 +1,203 @@
+html{
+  font-family: 'Poppins', sans-serif;
+  width:98.5vw;
+}
+body{
+  display:flex;
+  flex-direction:column;
+  margin:0px;
+  color:white;
+}
+ul{
+  color:white;
+  list-style-type:none;
+}
+a{
+  text-decoration:none;
+  color:white;
+}
+#navbar ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  margin:0px;
+  margin-right:18px;
+}
+#navbar ul a{
+  display:block;
+  padding:21px;
+  color:white;
+  font-size:21px;
+}
+#navbar ul a:hover{
+  background:rgb(140,50,50);
+}
+#navbar{
+  top:0px;
+  left:0px;
+  width:100%;
+  height:67px;
+  background:#be3144;
+  position:fixed;
+}
+
+#welcome-section{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(-135deg,rgb(20,20,20),rgb(50,48,50));
+  text-align:center;
+}
+#welcome-section h1{
+  font-size:4rem;
+  font-weight:bold;
+  margin:0px;
+}
+#welcome-section p{
+  color:#be3144;
+  line-height:5;
+  transform: scale(4.5, 4.5);
+  font-size:0.3rem;
+  font-style:italics;
+  font-weight:100;
+}
+
+#projects{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:rgb(105,115,150);
+  text-align:center; 
+  padding: 5rem 2rem 180px;
+}
+#projects h2{
+  text-align:center;
+  font-size:2.4em;
+  border-bottom-style:solid;
+  width:590px;
+  margin:150px auto 70px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:auto auto;
+  grid-template-rows:310px;
+  grid-gap:40px;
+  
+}
+.image{
+  height:265px;
+  max-width:471px;
+  border-radius:5px 5px 0px 0px;
+}
+.project-tile{
+  display:block;
+}
+.project-tile p{
+  margin-top:-4px;
+  padding:19px;
+  color:rgb(230,230,230);
+  background:rgb(55,55,55);
+  border-radius:0px 0px 5px 5px;
+}
+
+  #contact{
+    padding:150px;
+    text-align:center;
+    height:50vh;
+    background:#303841;
+  }
+#contact h1{
+  font-size:60px;
+  margin:0px;
+  padding:100px 0px 20px;
+  color:rgb(240,220,200);
+}
+#contact p{
+  font-size:20px;
+  margin:0px;
+  padding-bottom:50px;
+  font-weight:0;
+}
+.links{
+  font-size:18px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  
+}
+.profile-link{
+  margin:10px;
+  padding:10px;
+  text-shadow: 2px 2px rgb(30,30,30);
+}
+#contact-links a{
+    display:flex;
+  align-items:flex-end;
+}
+#contact-links i{
+  display:inline-block;
+}
+.gg-git-fork{
+  color:rgb(60,80,255);
+  margin-right:11px;
+  margin-bottom:4px;
+}
+.gg-mail{
+  color:rgb(60,80,255);
+  margin-right:5px;
+  margin-bottom:4px;
+}
+.gg-twitter{
+  color:rgb(60,80,255);
+  margin-bottom:2px;
+}
+.gg-facebook{
+  color:rgb(60,80,255);
+  margin-bottom:3px;
+}
+.profile-link:hover{
+  margin-top:15px;
+  transition:0.4s;
+}
+
+@media(max-width:1000px){
+  #navbar ul{
+    justify-content:space-around;
+  }
+  .grid{
+    grid-template-columns:400px;
+  }
+  #projects{
+    height:auto;
+    padding:0px;
+  }
+  #projects h2{
+    width:100%;
+    border-style:none;
+    text-decoration:underline;
+  }
+  .image{
+    width:99.5%;
+  }
+  .project-tile{
+    margin:0px;
+    padding:0px;
+    width:95%;
+  }
+  #contact{
+    padding:0px;
+    padding-top:65px;
+    height:82vh;
+  }
+  #contact h1{
+    font-size:50px;
+  }
+  .profile-link{
+    margin:0px;
+    margin-top:20px;
+  }
+}
